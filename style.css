@@ -254,14 +254,20 @@ p {
 
 @font-face {
   font-family: "PPMonumentExtended-Black";
-  src: url("./fonts/PPMonumentExtended-Black.otf") format("opentype");
-  font-display: swap;
+  src: url("./fonts/PPMonumentExtended-Black.woff2") format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-subset: latin;
 }
 
 @font-face {
   font-family: "PPMonumentExtended-Regular";
-  src: url("./fonts/PPMonumentExtended-Regular.otf") format("opentype");
-  font-display: swap;
+  src: url("./fonts/PPMonumentExtended-Regular.woff2") format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-subset: latin;
 }
 
 .button-3d:hover {

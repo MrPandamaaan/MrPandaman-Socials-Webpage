@@ -94,7 +94,7 @@ p {
   }
 
   .div1 {
-    height: 85%;
+    height: 100%;
     background-image: url(./images/pandaman_2_cut.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -255,11 +255,13 @@ p {
 @font-face {
   font-family: "PPMonumentExtended-Black";
   src: url("./fonts/PPMonumentExtended-Black.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PPMonumentExtended-Regular";
   src: url("./fonts/PPMonumentExtended-Regular.otf") format("opentype");
+  font-display: swap;
 }
 
 .button-3d:hover {

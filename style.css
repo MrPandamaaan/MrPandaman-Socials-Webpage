@@ -1,3 +1,4 @@
+/* Base Styles */
 body,
 html {
   margin: 0;
@@ -13,15 +14,26 @@ body {
   background-color: #151957;
 }
 
-.upper-container {
-  background-color: rgba(240, 248, 255, 0.35);
-  border-radius: 1vw;
-  box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Font Faces */
+@font-face {
+  font-family: "PPMonumentExtended-Black";
+  src: url("./fonts/PPMonumentExtended-Black.woff2") format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-subset: latin;
 }
 
+@font-face {
+  font-family: "PPMonumentExtended-Regular";
+  src: url("./fonts/PPMonumentExtended-Regular.woff2") format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-subset: latin;
+}
+
+/* Typography */
 .main-title,
 .subscript {
   font-family: "PPMonumentExtended-Black", sans-serif;
@@ -40,6 +52,16 @@ p {
   margin: 0;
 }
 
+/* Containers */
+.upper-container {
+  background-color: rgba(240, 248, 255, 0.35);
+  border-radius: 1vw;
+  box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .left-right {
   position: relative;
   z-index: 1;
@@ -51,6 +73,23 @@ p {
   height: 100%;
 }
 
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.p2 {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Div Layouts */
 .div1,
 .div2,
 .div3,
@@ -84,6 +123,7 @@ p {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* Specific Div Styles */
 .div1 {
   background-image: url(./images/pandaman_2_cut.webp);
   background-position: center;
@@ -102,6 +142,7 @@ p {
   margin-top: 0;
 }
 
+/* Specific Div Styles */
 .left {
   display: flex;
   flex-direction: column;
@@ -120,6 +161,52 @@ p {
   column-gap: 4%;
   row-gap: 4%;
   box-sizing: border-box;
+}
+
+.div4,
+.div5,
+.div6,
+.div10 {
+  grid-area: auto / 1 / auto / 4;
+}
+
+.div7,
+.div8,
+.div9 {
+  grid-area: 4 / auto / 5 / auto;
+}
+
+.div4 {
+  grid-row: 1;
+}
+.div5 {
+  grid-row: 2;
+}
+.div6 {
+  grid-row: 3;
+}
+.div7 {
+  grid-column: 1;
+}
+.div8 {
+  grid-column: 2;
+}
+.div9 {
+  grid-column: 3;
+}
+.div10 {
+  grid-row: 5;
+}
+
+/* Button Styles */
+.button-3d:hover {
+  box-shadow: 0 0.2vw #666;
+  transform: translateY(-0.2vw);
+}
+
+.button-3d:active {
+  box-shadow: 0 0.2vw #666;
+  transform: translateY(0.25vw);
 }
 
 @media (max-width: 1199px) {
@@ -225,85 +312,4 @@ p {
   svg {
     height: clamp(1.4rem, 1.4vw, 999rem);
   }
-}
-
-/*OPTIMIZED*/
-
-.div4,
-.div5,
-.div6,
-.div10 {
-  grid-area: auto / 1 / auto / 4;
-}
-
-.div7,
-.div8,
-.div9 {
-  grid-area: 4 / auto / 5 / auto;
-}
-
-.div4 {
-  grid-row: 1;
-}
-.div5 {
-  grid-row: 2;
-}
-.div6 {
-  grid-row: 3;
-}
-.div7 {
-  grid-column: 1;
-}
-.div8 {
-  grid-column: 2;
-}
-.div9 {
-  grid-column: 3;
-}
-.div10 {
-  grid-row: 5;
-}
-
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-@font-face {
-  font-family: "PPMonumentExtended-Black";
-  src: url("./fonts/PPMonumentExtended-Black.woff2") format("woff2");
-  font-display: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-subset: latin;
-}
-
-@font-face {
-  font-family: "PPMonumentExtended-Regular";
-  src: url("./fonts/PPMonumentExtended-Regular.woff2") format("woff2");
-  font-display: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-subset: latin;
-}
-
-.button-3d:hover {
-  box-shadow: 0 0.2vw #666;
-  transform: translateY(-0.2vw);
-}
-
-.button-3d:active {
-  box-shadow: 0 0.2vw #666;
-  transform: translateY(0.25vw);
-}
-
-.p2 {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
 }

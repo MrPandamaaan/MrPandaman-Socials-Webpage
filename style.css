@@ -36,6 +36,11 @@ p {
   margin: 0;
 }
 
+.left-right {
+  position: relative;
+  z-index: 1;
+}
+
 .div1,
 .div2,
 .div3,
@@ -238,25 +243,42 @@ p {
   }
 }
 
-
-
 /*OPTIMIZED*/
 
-.div4, .div5, .div6, .div10 {
+.div4,
+.div5,
+.div6,
+.div10 {
   grid-area: auto / 1 / auto / 4;
 }
 
-.div7, .div8, .div9 {
+.div7,
+.div8,
+.div9 {
   grid-area: 4 / auto / 5 / auto;
 }
 
-.div4 { grid-row: 1; }
-.div5 { grid-row: 2; }
-.div6 { grid-row: 3; }
-.div7 { grid-column: 1; }
-.div8 { grid-column: 2; }
-.div9 { grid-column: 3; }
-.div10 { grid-row: 5; }
+.div4 {
+  grid-row: 1;
+}
+.div5 {
+  grid-row: 2;
+}
+.div6 {
+  grid-row: 3;
+}
+.div7 {
+  grid-column: 1;
+}
+.div8 {
+  grid-column: 2;
+}
+.div9 {
+  grid-column: 3;
+}
+.div10 {
+  grid-row: 5;
+}
 
 .background {
   position: fixed;
@@ -294,4 +316,10 @@ p {
 .button-3d:active {
   box-shadow: 0 0.2vw #666;
   transform: translateY(0.25vw);
+}
+
+.p2 {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }

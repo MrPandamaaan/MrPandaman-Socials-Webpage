@@ -136,7 +136,7 @@ p {
   }
 
   svg {
-    height: clamp(1.5rem, 2.1vw, 7rem);
+    height: clamp(1.5rem, 2.1vw, 9rem);
   }
 
   .main-title {

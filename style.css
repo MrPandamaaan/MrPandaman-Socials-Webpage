@@ -135,6 +135,10 @@ p {
     font-size: clamp(0.8rem, 1.3vw, 7rem);
   }
 
+  svg {
+    height: clamp(1.5rem, 2.1vw, 7rem);
+  }
+
   .main-title {
     font-size: clamp(1.65rem, 2.6vw, 2rem);
   }
@@ -158,9 +162,13 @@ p {
     font-size: clamp(0rem, 2.06vw, 0.76rem);
     color: rgba(240, 248, 255, 0.4);
   }
+
+  svg {
+    height: clamp(0rem, 6vw, 7rem);
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px), (orientation: landscape) {
   .upper-container {
     aspect-ratio: 12 / 6;
     min-width: 40vw;
@@ -223,6 +231,10 @@ p {
     padding-top: 10%;
     padding-bottom: 10%;
     grid-area: 1 / 2 / 2 / 3;
+  }
+
+  svg {
+    height: clamp(1.4rem, 1.4vw, 999rem);
   }
 }
 

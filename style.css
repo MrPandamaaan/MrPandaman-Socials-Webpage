@@ -168,7 +168,7 @@ p {
   }
 }
 
-@media (min-width: 1200px), (orientation: landscape) {
+@media (min-width: 1200px) {
   .upper-container {
     aspect-ratio: 12 / 6;
     min-width: 40vw;

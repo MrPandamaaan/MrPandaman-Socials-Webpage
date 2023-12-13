@@ -83,12 +83,6 @@ p {
   z-index: -1;
 }
 
-.p2 {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
 /* Div Layouts */
 .div1,
 .div2,
@@ -142,7 +136,7 @@ p {
   margin-top: 0;
 }
 
-/* Specific Div Styles */
+/* Grid Layouts */
 .left {
   display: flex;
   flex-direction: column;

@@ -22,3 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "https://github.com/MrPandamaaan";
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".div5").addEventListener("click", function () {
+    window.location.href = "https://bsky.app/profile/mrpandaman.bsky.social";
+  });
+});
+

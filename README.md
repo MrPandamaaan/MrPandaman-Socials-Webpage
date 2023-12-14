@@ -2,12 +2,13 @@
 
 ## Introduction
 
-This is a beginner-level project to create a hub for all my social media links. As a newbie in web development, I welcome feedback and suggestions for improvement.
+This is a beginner-level project to create a hub for all my social media links.
+As a newbie in web development, I welcome feedback and suggestions for improvement.
 
 ## Features
 
-- Social Media Integration: Links to all my social profiles.
-- Responsive Design: Compatible with desktop and mobile devices.
+- Links to my social profiles.
+- Compatible with desktop and mobile devices.
 
 ## Feedback
 

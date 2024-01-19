@@ -5,9 +5,22 @@ html {
   padding: 0;
   min-height: 100%;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr auto;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  text-align: center;
+  background-color: transparent;
+  font-family: "PPMonumentExtended-Regular", sans-serif;
+  color: rgba(240, 248, 255, 0.4);
+  padding: 1vw;
+}
+
+a {
+  color: rgba(240, 248, 255, 0.4);
 }
 
 body {
@@ -238,6 +251,10 @@ p {
     font-size: clamp(0.515rem, 0.81vw, 0.76rem);
   }
 
+  footer {
+    font-size: clamp(0.7725rem, 1.215vw, 1.14rem);
+  }
+
   .text-content {
     font-size: clamp(0.8rem, 1.3vw, 7rem);
   }
@@ -258,6 +275,10 @@ p {
 
   .subscript {
     font-size: clamp(0rem, 2.06vw, 0.76rem);
+  }
+
+  footer {
+    font-size: clamp(0rem, 3.09vw, 1.125rem);
   }
 
   svg {
@@ -299,6 +320,11 @@ p {
   .subscript {
     font-size: clamp(0.5rem, 0.49vw, 999rem);
   }
+
+  footer {
+    font-size: clamp(0.75rem, 0.735vw, 999rem);
+  }
+
   .text-content {
     font-size: clamp(0.8rem, 0.75vw, 999rem);
   }
@@ -347,6 +373,11 @@ p {
   .subscript {
     font-size: 12.25px;
   }
+
+  footer {
+    font-size: 12.25px;
+  }
+
   .text-content {
     font-size: 18.75px;
   }

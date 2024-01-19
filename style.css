@@ -308,3 +308,50 @@ p {
   }
 }
 
+@media (min-width: 2500px) {
+  .upper-container {
+    min-width: 1000px;
+    max-width: 1000px;
+    border-radius: 25px;
+  }
+
+  .div4,
+  .div5,
+  .div6,
+  .div7,
+  .div8,
+  .div9,
+  .div10 {
+    border-radius: 25px;
+  }
+
+  .div1 {
+    height: 325px;
+  }
+
+  .left {
+    padding-left: 43.75px;
+  }
+
+  .right {
+    padding-bottom: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 50px;
+  }
+
+  .main-title {
+    font-size: 39.25px;
+  }
+
+  .subscript {
+    font-size: 12.25px;
+  }
+  .text-content {
+    font-size: 18.75px;
+  }
+
+  svg {
+    height: 35px;
+  }
+}

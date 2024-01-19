@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".div5").addEventListener("click", function () {
+    window.location.href = "https://bsky.app/profile/mrpandaman.bsky.social";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".div7").addEventListener("click", function () {
     window.location.href = "https://t.me/mrpandaman22";
   });
@@ -23,9 +29,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".div5").addEventListener("click", function () {
-    window.location.href = "https://bsky.app/profile/mrpandaman.bsky.social";
-  });
-});
+
 

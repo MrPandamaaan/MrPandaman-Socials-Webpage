@@ -210,7 +210,7 @@ p {
   grid-row: 5;
 }
 
-/* Button Styles */
+/* General Button Animations*/
 .button-3d:hover {
   box-shadow: 0 0.2vw #666;
   transform: translateY(-0.2vw);
@@ -219,6 +219,32 @@ p {
 .button-3d:active {
   box-shadow: 0 0.2vw #666;
   transform: translateY(0.25vw);
+}
+
+
+/* Don't Click! Button Animation */
+.div-hover {
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+.div-hover::after {
+  content: "Don't Click!";
+  transition: all 0.5s ease;
+}
+
+.div-hover:hover::after {
+  content: "Last Warning!!!";
+  animation: textFadeIn 0.5s forwards;
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1199px) {

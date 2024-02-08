@@ -285,7 +285,7 @@ p {
   }
 
   footer {
-    font-size: clamp(0rem, 3.09vw, 1.125rem);
+    font-size: clamp(0rem, 2.06vw, 0.76rem);
   }
 
   svg {
@@ -329,7 +329,7 @@ p {
   }
 
   footer {
-    font-size: clamp(0.75rem, 0.735vw, 999rem);
+    font-size: clamp(0.5rem, 0.49vw, 999rem);
   }
 
   .text-content {

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".div9").addEventListener("click", function () {
-    window.location.href = "https://github.com/MrPandamaaan";
+    window.location.href = "https://www.instagram.com/mr.pandaman22";
   });
 });
 

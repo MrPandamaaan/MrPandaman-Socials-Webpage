@@ -24,7 +24,7 @@ footer {
   user-select: none;
 }
 
-a {
+#bottomanchor {
   color: rgba(240, 248, 255, 0.4);
 }
 
@@ -297,8 +297,8 @@ p {
 @media (min-width: 1200px) {
   .upper-container {
     aspect-ratio: 12 / 6;
-    min-width: 40vw;
-    max-width: 60rem;
+    min-width: 642px;
+    max-width: 40vw;
   }
 
   .left-right {

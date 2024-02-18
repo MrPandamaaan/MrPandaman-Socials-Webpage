@@ -53,7 +53,7 @@ function calculateAge(birthDate) {
 }
 
 function updateAge() {
-  var birthDate = "2001-07-13"; // Ihr Geburtsdatum im Format JJJJ-MM-TT
+  var birthDate = "2001-07-13";
   var age = calculateAge(birthDate);
   document.getElementById("age").textContent = age;
 }
